@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Agenda.MainPage">
+
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+        <Label Text="Agenda" TextColor="Black" FontSize="Title"/>
+        <Entry Placeholder="Nombre" Keyboard="Text" x:Name="txtNombre" Margin="10"/>
+        <Entry Placeholder="Telefono" Keyboard="Telephone" x:Name="txtTelefono" Margin="10"/>
+        <Button Text="Guardar" x:Name="btnGuardar" BorderColor="Black"
+                CornerRadius="25" WidthRequest="60" HeightRequest="60"
+                Clicked="btnGuardar_Clicked" />
+        <Frame Padding="100">
+            <Button Text="Consultar" x:Name="btnConsultar" Clicked="btnConsultar_Clicked"/>
+        </Frame>
+
+    </StackLayout>
+
+</ContentPage>
